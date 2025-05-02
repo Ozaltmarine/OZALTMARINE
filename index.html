@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özalt Marine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.pexels.com/photos/9617/pexels-photo.jpg?cs=srgb&dl=pexels-jeshoots-9617.jpg&fm=jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-position: center; 
+            color: black;
+        }
+
+        section {
+            padding: 30px 40px;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: rgba(255, 255, 255, 0.95); 
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #3a7292;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #3a7292;
+            padding-bottom: 10px;
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px 30px;
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .contact a {
+            color: black;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: rgba(22, 80, 119, 0.9); 
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .resim {
+            width: 350px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 20px;
+            text-align: center;
+        }
+
+        .header-contact {
+            text-align: right;
+            font-size: 1.1em;
+            line-height: 1.4;
+        }
+
+        .header-contact p {
+            margin: 3px 0;
+        }
+
+        .header-contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-links {
+            margin-top: 8px;
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .social-links img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .resim {
+                width: 100%;
+                height: auto;
+            }
+
+            table, tr, td {
+                display: block;
+                width: 100%;
+            }
+
+            table {
+                border-spacing: 10px;
+            }
+
+            .services-list {
+                grid-template-columns: 1fr;
+            }
+
+            .header-contact {
+                font-size: 1em;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>    
+    <header style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 20px 40px; background-color: #2374aa; color: white;">
+        <img src="logo.jpg" alt="Özalt Marine Logo" style="max-width: 100px; height: auto;">
+        <div style="text-align: center; flex-grow: 1;">
+            <h1 style="margin: 0; font-size: 2.5em;">Özalt Marine</h1>
+            <p style="margin: 5px 0; font-size: 1.2em;">Profesyonel Denizcilik Hizmetleri</p>
+        </div>
+        <div class="header-contact">
+            <p>Telefon: ‪+90 551 128 52 71‬</p>
+            <p>‪+90 545 861 57 09‬</p>
+            <p>Email: <a href="mailto:info@ozaltmarine.com">info@ozaltmarine.com</a></p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ozaltmarinservice" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">Instagram
+                </a>
+                <a href="https://www.linkedin.com/company/%C3%B6zalt-marine/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">LinkedIn
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>Çalışmalarımız</h2>
+        <table>
+            <tr>
+                <td><img src="./Unknown-10.jpg" alt="Foto 1" class="resim"></td>
+                <td><img src="./Unknown-12.jpg" alt="Foto 2" class="resim"></td>
+                <td><img src="./Unknown-14.jpg" alt="Foto 3" class="resim"></td>
+            </tr>
+            <tr>
+                <td><img src="./Unknown-15.jpg" alt="Foto 4" class="resim"></td>
+                <td><img src="./Unknown-17.jpg" alt="Foto 5" class="resim"></td>
+                <td><img src="./Unknown-9.jpg" alt="Foto 6" class="resim"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="about">
+        <h2>Hakkımızda</h2>
+        <p>Firmamız elektrik, elektronik, mekanik ve otomasyon sistemleri alanlarında yenilikçi çözümleri sunarak endüstriye ve ticari projelerinize değer katmaktadır. Kara ve Marin sektörlerinde uzman ekibimizle güvenilir ve verimli sistemler tasarlıyor, entegre mühendislik hizmetleri sağlıyoruz. Elektrik planları, otomasyon sistemleri, mekanik sistemler ve tasarımları konularında yüksek kalite standartlarında üretim ve montaj hizmetleri sunuyoruz. Güçlü teknik altyapımızla, güvenilir, yenilikçi ve sürdürülebilir çözümler için buradayız.</p>
+    </section>
+
+    <section class="services">
+        <h2>Hizmetlerimiz</h2>
+        <ul class="services-list">
+            <li>Motor bakımları ve montajları</li>
+            <li>Navigasyon Sistemleri</li>
+            <li>Elektronik kart revizyon ve bakım</li>
+            <li>Yangın alarm sistemi</li>
+            <li>Elektrik panolarında revizyon ve montaj</li>
+            <li>Teknik servis ve arıza giderme</li>
+            <li>Mekanik panel temizliği</li>
+            <li>E/R yağ temizleme</li>
+            <li>Tank temizliği</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>İletişim</h2>
+        <p>Telefon: <br> +90 551 128 52 71 <br> +90 545 861 57 09</p>
+        <p>Email: <a href="mailto:info@ozaltmarine.com">info@ozaltmarine.com</a></p>
+        <p>Adres: İstanbul/Tuzla Aydıntepe Mahallesi Fedakar Sokak, Posta Kodu 34947</p>
+
+        <div class="social-links" style="margin-top: 20px;">
+            <a href="https://www.instagram.com/ozaltmarinservice" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:24px; height:24px; margin-right: 5px;">Instagram
+            </a>
+            <a href="https://www.linkedin.com/company/%C3%B6zalt-marine/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width:24px; height:24px; margin-left: 20px; margin-right: 5px;">LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Özalt Marine. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        console.log("Özalt Marine web sitesine hoş geldiniz!");
+    </script>
+</body>
+</html>
